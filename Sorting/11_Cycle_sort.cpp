@@ -4,27 +4,20 @@ using namespace std;
 
 void cycleSort(vector<int>& arr) {
     int n = arr.size();
-    for (int cycle_start = 0; cycle_start <= n - 2; cycle_start++) {
-        int item = arr[cycle_start];
-        int pos = cycle_start;
-        for (int i = cycle_start + 1; i < n; i++)
-            if (arr[i] < item)
-                pos++;
-        if (pos == cycle_start)
-            continue;
+    for(int i=0;i<n;i++){
+        int item=arr[i];
+        int pos=i;
+        for(int j=i+1;j<n;j++){
+            if(arr[j]>item) pos++;
+        }
+        swap(item,arr[pos]);
 
-        while (item == arr[pos])
-            pos++;
-        swap(item, arr[pos]);
-
-        while (pos != cycle_start) {
-            pos = cycle_start;
-            for (int i = cycle_start + 1; i < n; i++)
-                if (arr[i] < item)
-                    pos++;
-            while (item == arr[pos])
-                pos++;
-            swap(item, arr[pos]);
+        while(pos!=i){//this is because the when we interchange the num then the num is disturbed hence we recover that using this while loop
+            int pos=i;
+        for(int j=i+1;j<n;j++){
+            if(arr[j]>item) pos++;
+        }
+        swap(item,arr[pos]);
         }
     }
 }
