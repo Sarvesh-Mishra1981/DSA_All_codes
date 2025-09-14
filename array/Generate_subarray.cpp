@@ -6,5 +6,5 @@
 //         b.push_back(m[n-1]);
 //         generate_subset(m,n-1,b,a);
 //         b.pop_back(); 
-//         generate_subset(m,n-1,b);
+//         generate_subset(m,n-1,b,a);
 //     }
