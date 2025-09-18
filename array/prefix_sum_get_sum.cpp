@@ -8,7 +8,7 @@ class Solution{
         for(int i=1;i<a.size();i++){
             b[i]=b[i-1]+a[i];
         }
-        return b;
+         return b;
     }
     int return_sum(vector<int>& a,int l,int r){
         vector<int> b=prefix_sum(a);
