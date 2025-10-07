@@ -1,5 +1,5 @@
 /*
-The floor means that nyumber that is just smaller then the required number and So we can use the BST here as it 
+The floor means that number that is just smaller then the required number and So we can use the BST here as it 
 very familiar to it as one end  the number is smaller and the other has the bigger number so in this condition 
 what we will do is that when we will find the root smaller tehn the x then we will strore it and move right  
 

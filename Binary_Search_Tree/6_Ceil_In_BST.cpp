@@ -1,5 +1,5 @@
 /*
-ceil is just opposite of the floor in  the ceil what we will do is that when we will traverse the let then we will just 
+ceil is just opposite of the floor in  the ceil what we will do is that when we will traverse the left then we will just 
 upadte the ans and same as that of the floor anf this is quite simple
 */
 #include<iostream>

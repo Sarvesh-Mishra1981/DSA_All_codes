@@ -32,7 +32,7 @@ int countNodes(Node* root){
    if(lh==rh){
     return pow(2,lh)-1;
    }
-   return 1+countNodes(root->left)+countNodes(root->right);
+   return 1+lh+rh;
 }
 int main() {
     Node* head = new Node(1);
